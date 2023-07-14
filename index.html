@@ -3,9 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <title>Calculadora</title>
 </head>
 <body>
-  <h1>Calculadora</h1>
+  <h1>La calculadora mas mejor de todas</h1>
+
+  <!-- Contenedor Calculadora -->
+  <div class="calculator">
+    <input type="text" id="result">
+  
+    <!-- Cuerpo Calculadora -->
+    <div class="buttons">
+      <button title="Punto" onclick="appendToResult('.')">.</button>
+      <button title="Porcentaje" onclick="appendToResult('%')">%</button>
+      <button title="(" onclick="appendToResult('(')">(</button>
+      <button title=")" onclick="appendToResult(')')">)</button>
+      <button title="7" onclick="appendToResult('7')">7</button>
+      <button title="8" onclick="appendToResult('8')">8</button>
+      <button title="9" onclick="appendToResult('9')">9</button>
+      <button title="/" onclick="appendToResult('/')">/</button>
+      <button title="4" onclick="appendToResult('4')">4</button>
+      <button title="5" onclick="appendToResult('5')">5</button>
+      <button title="6" onclick="appendToResult('6')">6</button>
+      <button title="*" onclick="appendToResult('*')">*</button>
+      <button title="1" onclick="appendToResult('1')">1</button>
+      <button title="2" onclick="appendToResult('2')">2</button>
+      <button title="3" onclick="appendToResult('3')">3</button>
+      <button title="Menos" onclick="appendToResult('-')">-</button>
+      <button title="Borrar" onclick="clearResult()">C</button>
+      <button title="0" onclick="appendToResult('0')">0</button>
+      <button title="Igual" onclick="calculateResult()">=</button>
+      <button title="Suma" onclick="appendToResult('+')">+</button>
+      <button title="Potenciación" onclick="appendToResult('^')">^</button>
+      <button title="Raiz cuadrada, cerrar parentesis" onclick="appendToResult('sqrt(')">┌</button>
+    </div>
+    <!-- Cierre Cuerpo Calculadora -->
+  </div>
+  <!-- Cierre Contenedor Calculadora -->
+  
+  <!-- Archivos JS -->
+  <!-- Archivo de funcionalidades -->
+  <script src="js/dom.js"></script>
+
+  <!-- Libreria para validar expresiones matematicas -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.2/lib/browser/math.min.js"></script>
+
 </body>
 </html>
