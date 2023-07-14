@@ -12,3 +12,4 @@ Se agrego:
 - Raiz Cuadrada
 
 Se realizaron unos cambios en el apartado visual y se realizacon validaciones utilizando la libreria "mathjs"
+Posibilidad de utilizar el Teclado de la Computadora para las operaciones, enter y borrar
