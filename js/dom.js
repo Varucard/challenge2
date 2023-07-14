@@ -40,3 +40,11 @@ function handleKeyPress(event) {
 
 // Agrega el evento de teclado al campo de entrada de la calculadora
 document.getElementById('result').addEventListener('keydown', handleKeyPress);
+
+/**
+ * Recibe un mensaje para ser mostrado por pantalla
+ * @param {string} mensaje 
+ */
+function mensajePantalla(mensaje) {
+  alert(mensaje);
+}
